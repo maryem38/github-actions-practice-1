@@ -50,13 +50,13 @@ env:
 ### Step 1: GitHub Context Information
 Display basic GitHub context data:
 ```bash
-echo "=== GitHub Context ==="
-echo "Repository: ${{ github.repository }}"
-echo "Branch: ${{ github.ref_name }}"
-echo "Triggered by: ${{ github.actor }}"
-echo "Event type: ${{ github.event_name }}"
-echo "Run number: ${{ github.run_number }}"
-echo "Workflow name: ${{ github.workflow }}"
+    echo "=== GitHub Context ==="
+    echo "Repository: ${{ github.repository }}"
+    echo "Branch: ${{ github.ref_name }}"
+    echo "Triggered by: ${{ github.actor }}"
+    echo "Event type: ${{ github.event_name }}"
+    echo "Run number: ${{ github.run_number }}"
+    echo "Workflow name: ${{ github.workflow }}"
 ```
 
 ### Step 2: Runner Environment Information
@@ -137,7 +137,7 @@ echo "🍎 Running on macOS - using homebrew package manager"
 echo "macOS runner detected: ${{ runner.os }}"
 ```
 
-**Windows Step:** Only run if `runner.os` equals `Windows`
+    **Windows Step:** Only run if `runner.os` equals `Windows`
 ```bash
 echo "🪟 Running on Windows - using chocolatey package manager"  
 echo "Windows runner detected: ${{ runner.os }}"
