@@ -14,4 +14,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Confirm filters worked
-        run: echo "Event filters working! Triggered on ${{ github.refgi_name }} branch"
+        run: echo "Event filters working! Triggered on ${{ github.ref_name }} branch"
