@@ -10,7 +10,7 @@ on:
 
 jobs:
   test-filters:
-    name: Test Filters
+    name: Test_Filters
     runs-on: ubuntu-latest
     steps:
       - name: Confirm filters worked
