@@ -71,6 +71,7 @@ jobs:
           echo "Linux runner detected: ${{ runner.os }}"
       - name: macOS Step
         if: runner.os == 'macOS'
+
         run: |
           echo "🍎 Running on macOS - using homebrew package manager"
           echo "macOS runner detected: ${{ runner.os }}"
